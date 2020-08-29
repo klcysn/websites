@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sprint-0 evaluation form">
+    <meta name="keywords" content="sprint-0, sprint, form, clarusway">
+    <meta name="author" content="Yasin Kilic">
+    <title>sprint0</title>
+    <style>
+
+        h1 {font-size:470%;
+        font-weight: lighter;
+        margin: 0%;}
+        p {font-size: 150%;
+        margin-bottom: 2%;}
+        input {margin-top: 2%;
+        margin-bottom: 1%;}
+        .head {font-size: 150%;
+        }
+        .text {width: 27%;
+        height: 30px;}
+        select {margin-top: 2%;
+        margin-bottom: 2%;}
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Clarusway Survey Form</h1>
+    </div>
+    <div>
+      <p>Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <form action="result.html" method="GET">
+      <label 
+        >Name <br/><input class="text" type="text" name="name" placeholder="Enter your name" required/></label><br>
+      <label>Surname <br/><input  class="text" type="text" name="surname" placeholder="Enter your Surname" required/></label><br>
+      <label >Email <br /><input class="text" type="email" name="email" placeholder="user@clarusway.com" required/></label><br>
+      <label class="head">Which option best describes your current role? <br>
+        <select name="option" required>
+          <option value="" disabled selected>Select current role
+          </option><br>
+          <option value="Student">Student</option><br>
+          <option value="Teacher">Teacher</option><br>
+          <option value="Full Time Job">Full Time Job</option><br>
+          <option value="Part Time Job">Part Time Job</option><br>
+          <option value="Full Time Learner">Full Time Learner</option><br>
+          <option value="Prefer not to say">Prefer not to say</option>
+        </select></label><br>
+      <label class="head">Would you recommend Clarusway to a friend?</label><br>
+      <label
+        ><input
+          type="radio"
+          name="recomment"
+          value="definitely_yes" checked
+        />Definitely, Yes</label
+      ><br>
+      <label><input type="radio" name="recomment" value="maybe" />Maybe</label><br>
+      <label
+        ><input type="radio" name="recomment" value="not_sure" />Not sure</label
+      ><br>
+      <label
+        ><input
+          type="radio"
+          name="recomment"
+          value="definitely_no"
+        />Definitely, No</label
+      ><br>
+      <label class="head"
+        >What is your favorite feature of Clarusway? <br>
+        <select name="favorite" required>
+          <option value="" disabled selected>
+            Select an option
+          </option>
+          <option value="Courses">Courses</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Mentors">Mentors</option>
+        </select></label
+      ><br>
+      <label class="head">What would you like to see improved? (Check all that apply)</label><br>
+      <label><input type="checkbox" name="skill-1" value="front">Front-end Projects</label><br>
+      <label><input type="checkbox" name="skill-2" value="back">Back-end Projects</label><br>
+      <label><input type="checkbox" name="skill-3" value="Data Science">Data Science</label><br>
+      <label><input type="checkbox" name="skill-4" value="Additional Courses">Additional Courses</label><br>
+      <label class="head">Any comments or suggestions? <br><textarea name="message"cols="22" rows="3" placeholder="Enter your comment here...Thanxs for your comments...." style="margin-top: 2%;"></textarea></label>
+      <label><input type="submit" value="Submit" style="border: none;width: 7%;height: 22px;"/></label>
+    </form>
+  </body>
+</html>
