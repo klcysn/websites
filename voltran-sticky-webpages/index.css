@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.structre {
+  width: 100%;
+}
+header.structure {
+  background-color: rgb(246, 50, 50);
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#main_head {
+  width: 16%;
+  text-align: center;
+  font-size: 2vw;
+  font-family:'Tahoma', Geneva, Verdana, sans-serif;
+  margin: auto;
+  color: white;
+  padding: 8px;
+  border: 0.7vw solid white;
+  border-radius: 50px;
+
+}
+
+#main_img {width: 100%;
+margin-bottom: -4px;}
+
+nav {background-color: #F4F4F4;
+margin-top: 0px;
+padding: 0.5em;
+position: sticky;
+top: 90.4px;
+}
+
+ul {margin: auto;
+text-align: center;
+padding: 1em;
+}
+
+li {display: inline;
+margin: 4em;
+font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+font-size: 1.5vw;
+}
+
+li a {text-decoration: none;
+    color: rgb(75, 75, 75);}
+
+li a:hover {text-decoration: underline solid;
+cursor: pointer;}
+
+#red {color: rgb(246, 50, 50)}
+
+#middle {width: 75%;
+margin: auto;
+margin-top: 5em;
+margin-bottom: 5em;}
+
+#second_head {color: rgb(246, 50, 50);
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+margin-bottom: 0.5em;
+}
+
+#main_article { font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+    line-height: 2em;
+    margin-bottom: 5em;
+    margin-top: 1em;
+}
+
+span {font-weight: bold;}
+
+#bunner {width: 100%;
+    text-align: center;
+margin: auto;}
+
+#bunner1 {margin-right: 8em;
+    }
+
+#bunner1:hover, #bunner2:hover {width: 50%;
+}
+
+#last {width: 100%;
+text-align: center;
+background-color: #F4F4F4;
+padding: 4em;}
+
+#last_head {color: rgb(75, 75, 75);
+font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+font-size: 36px;
+font-weight: 700;}
+
+#last_article {color: rgb(75, 75, 75);
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    }
+
+form {margin: auto;
+    margin-top: 2em;
+width: 40%;
+border: none;}
+
+
+#email {width: 60%;
+font-size: 24px;
+padding: 12px;
+border: none;
+border-radius: 30px;}
+
+#email:focus {border: 5px dashed  rgb(75, 75, 75);
+outline: none ;}
+
+#submit {width: 20%;
+    font-size: 24px;
+    padding: 12px;
+    border: 4px solid greenyellow;
+border-radius: 40px;
+outline: none;}
+
+#foot {width: 100%;
+font-size: 18px;
+font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+color: white;
+text-align: center;
+background-color:rgb(246, 50, 50);
+padding: 2em;}
