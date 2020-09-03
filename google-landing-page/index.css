@@ -79,6 +79,8 @@ right: 0.8em;}
   width: 32em;
   margin: 11em auto;
   text-align: center;
+  position: static;
+  z-index: 1;
 }
 
 #search {
@@ -139,7 +141,8 @@ right: 0.8em;}
 
 #end {position: fixed;
 bottom: 0;
-min-width: 100%;}
+min-width: 100%;
+z-index: -1;}
 
 #loc {
   background-color: rgba(0, 0, 0, 0.08);
