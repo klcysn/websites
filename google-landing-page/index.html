@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/gfavicon.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Google Search Engine, you can search what you imagine">
+    <meta name="keywords" content="Google, search, find">
+    <meta name="author" content="Yasin Kilic">
+    <title>Google Landing Page</title>
+</head>
+<body>
+    <div id="main">
+        <nav id="top">
+            <div>
+                <button id="sign" onclick="document.location='https://accounts.google.com/ServiceLogin?hl=tr&passive=true&continue=https://www.google.com.tr/&ec=GAZAAQ'">Sign In</button>
+                <a href="https://www.google.de/intl/tr/about/products?tab=wh" id="app"><img src="./images/appicon.png" alt="Applications"></a>
+                <a href="https://www.google.de/imghp?hl=tr&tab=wi&ogbl" class="top_head_r imgs">Images</a>
+                <a href="https://mail.google.com/" class="top_head_r imgs">Gmail</a>
+            </div> 
+            <a href="https://about.google/intl/en/" class="top_head_l">About</a>
+            <a href="https://store.google.com/DE?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en" class="top_head_l">Store</a>
+        </nav>
+
+        <section id="container">
+            <div>
+                <img src="./images/googlelogo.png" alt="Google" width="55%">
+                <form action="https://www.google.com/search" method="GET">
+                    <input type="search" name="q" id="search">
+                    <a href=""><img src="./images/google_microphone.png" alt="Mic" width="3%" style="float:right;position: relative;top: -2.7em;left:-1.2em;"></a>
+                    <div id="last_button">
+                        <button type="submit" id="last1">Google Search</button>
+                        <button id="last2" onclick="document.location='https://www.google.com/doodles'">I'm Feeling Lucky</button><br>
+                        <p id="lang">Other Languages you can use Google: <a href="https://www.google.com.tr/setprefs?sig=0_pIF7iwPCC2uYZqHGoZjn1ssqN_Q%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwj3rr-7jcvrAhWMsRQKHcxKARIQ2ZgBCBM" id="lang-a">English</a></p>
+                    </div>
+                </form>
+            </div>
+           
+        </section>
+        <div id="end">
+            <footer id="loc">
+                <p>Turkey</p>
+            </footer>
+
+            <footer id="bottom">
+                <nav id="nav-r">
+                    <ul>
+                        <li><a href="https://policies.google.com/privacy?hl=en-DE&fg=1">Privacy</a></li>
+                        <li><a href="https://policies.google.com/terms?hl=en-DE&fg=1">Terms</a></li>
+                        <li><a href="https://www.google.com.tr/preferences?hl=en">Settings</a></li>
+                    </ul>
+                </nav>
+                <nav id="nav-l">
+                    <ul>
+                        <li><a href="https://ads.google.com/intl/en/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                        <li><a href="https://www.google.com.tr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                        <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                    </ul>
+                </nav>
+            </footer>
+    </div>
+</div>
+</body>
+</html>
