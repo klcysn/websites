@@ -101,6 +101,8 @@ right: 0.8em;}
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
+#search:focus {background-color: white;}
+
 #last1,
 #last2 {
   margin-left: 0.5em;
