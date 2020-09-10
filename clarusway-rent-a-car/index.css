@@ -408,7 +408,7 @@ span {
   }
 
   .aaa {
-    margin-top: -2.8vh;
+    margin-top: -3vh;
   }
 
   .anime {
@@ -428,8 +428,15 @@ span {
 
   .nav .inside {
     position: fixed;
+    flex-direction: row;
+    align-items: flex-start;
     top: 10vh;
+    left: 2vw;
     z-index: 3;
+  }
+  .nav .inside div{
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .cont {
