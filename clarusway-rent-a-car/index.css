@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.aaa {
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin-top: 2.8%;
+  background-color: rgb(235, 235, 235);
+  z-index: 1;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.anime {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 3%;
+  background-color: white;
+  animation-name: car;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.anime img:not(:first-child) {
+  height: 5vh;
+  position: sticky;
+}
+
+@keyframes car {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0;
+  background-color: rgb(128, 0, 128);
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  z-index: 2;
+}
+
+h3 {
+  color: white;
+  font-size: 1.5vw;
+}
+
+h2 {
+  padding: 1.5vh 3vw;
+  color: white;
+  font-size: large;
+  text-decoration: underline solid white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 2vh 1.5vw;
+}
+
+a:hover {
+  background-color: gray;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2vw;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 1s;
+}
+.nav:first-child {
+  display: none;
+}
+.nav:hover a {
+  display: block;
+  position: relative;
+}
+.nav:hover {
+  background-color: rgb(129, 58, 129);
+}
+
+.nav .inside {
+  display: none;
+  background-color: rgb(65, 66, 65);
+  position: fixed;
+  top: 15vh;
+  z-index: 3;
+}
+
+.nav:hover .inside {
+  display: flex;
+  flex-direction: row;
+}
+
+.inside > div {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid white;
+}
+
+.nav:hover .inside2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav button {
+  border: 1px solid white;
+  outline: 1px solid rgb(128, 0, 128);
+  background-color: rgb(128, 0, 128);
+  color: white;
+  padding: 1vw;
+  transition: all ease-in-out 2s;
+  font-size: 1vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background-color: white;
+  color: rgb(128, 0, 128);
+  outline-offset: -0.4vw;
+}
+
+.cont {
+  padding: 15vh 0 0 5vw;
+  background-color: rgb(235, 235, 235);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: table;
+  content: "";
+  clear: both;
+  margin-left: 10vw;
+  width: 100%;
+  color: rgb(78, 3, 78);
+  font-weight: 600;
+}
+label {
+  display: inline-block;
+  margin: 3vh 0 3vh 0;
+}
+
+select,
+input:not(#return) {
+  margin: 3vh 0 3vh 0;
+  height: 10vh;
+  outline: none;
+}
+input:focus,
+select:focus {
+  box-shadow: 0 0 1.5vw rgb(128, 0, 128);
+}
+
+.long_input {
+  width: 150%;
+  transition: all ease-in-out 1s;
+}
+.long_input:focus {
+  width: 200%;
+}
+
+.date,
+#age {
+  font-size: 1.3vw;
+}
+
+#age {
+  width: 100%;
+}
+
+#continue {
+  border: none;
+  outline: none;
+  padding: 3vh 2vw;
+  background-color: rgb(128, 0, 128);
+  color: white;
+  font-size: 2vw;
+  letter-spacing: 1vw;
+  cursor: pointer;
+  float: left;
+  transition: all ease-in-out 1s;
+}
+
+#continue:hover {
+  transform: skewx(45deg);
+  transform: translateX(1vw);
+  width: 100%;
+  box-shadow: 1vw 6vh 3vw rgb(128, 0, 128);
+}
+
+.pledge_container {
+  margin: 16vh 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.pledge_container img {
+  width: 100%;
+  height: 50vh;
+}
+
+.pledge_container .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(128, 0, 128);
+  color: white;
+  height: 50vh;
+}
+
+.detail h1 {
+  margin-bottom: 4vh;
+}
+
+.detail p {
+  font-weight: 600;
+  font-size: large;
+  padding: 0 5vw;
+  line-height: 4vh;
+}
+
+.more {
+  align-self: flex-start;
+  margin: 3vw;
+  padding: 2vh 3vw;
+  background-color: rgb(235, 235, 235);
+  color: rgb(128, 0, 128);
+  font-size: 1.5vw;
+  font-weight: 700;
+  letter-spacing: 0.8vw;
+  cursor: pointer;
+  outline: 2px solid white;
+  transition: all ease-in-out 1s;
+}
+
+.more:hover {
+  background-color: rgb(128, 0, 128);
+  color: white;
+  outline-offset: -1vw;
+}
+
+.alternative {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sub-alternative {
+  width: 30%;
+}
+
+.alternative img {
+  width: 100%;
+  height: 40vh;
+}
+
+.desc {
+  color: rgb(78, 3, 78);
+  font-weight: 600;
+  line-height: 5vh;
+}
+.desc::first-line {
+  font-weight: 900;
+}
+
+.sub-alternative .more {
+  margin: 1vw;
+  border: 2px solid rgb(128, 0, 128);
+  text-align: center;
+}
+
+.business {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17vh;
+  background-color: rgb(128, 0, 128);
+}
+
+.business img {
+  width: 100%;
+  height: 100%;
+}
+.business .detail {
+  font-weight: 600;
+  font-size: large;
+  padding: 0 5vw;
+  line-height: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(128, 0, 128);
+  color: white;
+  width: 100%;
+  padding-top: 10vh;
+}
+.business .detail .more {
+  font-size: 1vw;
+  font-weight: 900;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 5vw;
+  font-weight: 700;
+  line-height: 4vh;
+}
+.writen {
+  color: rgb(128, 0, 128);
+  margin-bottom: 4vh;
+}
+span {
+  font-size: 0.8vw;
+}
+.app-head {
+  color: rgb(128, 0, 128);
+  font-size: 2vw;
+  margin-bottom: 4vh;
+}
+.symbol {
+  margin-bottom: 4vh;
+}
+.symbol a:hover {
+  border: none;
+  background-color: rgb(235, 235, 235);
+}
+#andro {
+  width: 15%;
+}
+.loc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.loc .div {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.loc div a {
+  display: block;
+  color: rgb(128, 0, 128);
+  margin: 0;
+  padding: 0.5vw;
+  line-height: 4vh;
+}
+
+.loc div a:hover {
+  background-color: rgb(128, 0, 128);
+  color: white;
+  border-radius: 3px;
+  position: relative;
+  top: -1vh;
+  box-shadow: 0 0 2vw rgb(128, 0, 128);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(128, 0, 128);
+}
+.foot:not(:first-child) {
+  border-left: 2px dotted white;
+}
+
+@media only screen and (max-width: 800px) {
+  * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aaa {
+    margin-top: -2.8vh;
+  }
+
+  .anime {
+    display: none;
+  }
+
+  .nav {
+    padding: 0 0.8vw;
+  }
+
+  .nav h3 {
+    font-size: 2vw;
+  }
+  .nav button {
+    font-size: 1.5vw;
+  }
+
+  .nav .inside {
+    position: fixed;
+    top: 10vh;
+    z-index: 3;
+  }
+
+  .cont {
+    width: 80%;
+  }
+
+  .long_input {
+    width: 80%;
+  }
+
+  .long_input:focus {
+    width: 100%;
+  }
+  .date {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 3vw;
+    width: 80%;
+  }
+
+  #age {
+    font-size: 3vw;
+    width: 120%;
+  }
+  #return {
+    display: inline-flex;
+  }
+  .detail h1 {
+    margin-bottom: 2vh;
+  }
+  
+  .detail p {
+    font-weight: 600;
+    font-size: medium;
+    padding: 0 5vw;
+    line-height: 4vh;
+  }
+
+  .alternative img {
+    width: 220%;
+  }
+
+  .desc {
+    width: 220%;
+  }
+
+  .more {
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .business .detail {
+    order: 1;
+  }
+
+  .business .detail .more {
+    font-size: 2vw;
+  }
+  span {
+    font-size: 2vw;
+  }
+  .app-head {
+    font-size: 3.5vw;
+  }
+  #andro {
+    width: 35%;
+  }
+  .footer {
+    width: 100%;
+    flex-direction: row;
+    font-size: 2vw;
+  }
+}
