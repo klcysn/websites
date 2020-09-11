@@ -65,6 +65,10 @@ body {
   z-index: 2;
 }
 
+img{
+  object-fit: cover;
+}
+
 h3 {
   color: white;
   font-size: 1.5vw;
@@ -400,6 +404,7 @@ span {
   border-left: 2px dotted white;
 }
 
+
 @media only screen and (max-width: 800px) {
   * {
     display: flex;
@@ -408,19 +413,21 @@ span {
   }
 
   .aaa {
-    margin-top: -3vh;
+    margin-top: -5vh;
   }
 
+  
   .anime {
     display: none;
   }
 
   .nav {
     padding: 0 0.8vw;
+    
   }
 
   .nav h3 {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .nav button {
     font-size: 1.5vw;
@@ -429,10 +436,11 @@ span {
   .nav .inside {
     position: fixed;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     top: 10vh;
     left: 2vw;
     z-index: 3;
+    font-size: 3vw;
   }
   .nav .inside div{
     flex-direction: column;
@@ -466,6 +474,7 @@ span {
   }
   .detail h1 {
     margin-bottom: 2vh;
+    margin-top: 2vh;
   }
   
   .detail p {
