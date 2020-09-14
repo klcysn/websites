@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 1.042vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1/1/2/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #35424a;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 2rem;
+  border-bottom: 3.5px solid #a9508b;
+}
+
+.container header .name {
+  font-size: 1.85rem;
+  margin-left: 8rem;
+}
+
+.container header div > span {
+  color: #a9508b;
+}
+
+.container header div > span ul {
+  display: inline-block;
+}
+
+.container header div > span ul:hover {
+  color: #b915b9;
+}
+
+.container header div > span li {
+  display: inline;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: cla 3s ease-in-out;
+          animation: cla 3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.container header div > span li:nth-child(1) {
+  position: relative;
+  left: 10vw;
+  top: 15vh;
+}
+
+.container header div > span li:nth-child(2) {
+  position: relative;
+  left: 15vw;
+  top: 20vh;
+}
+
+.container header div > span li:nth-child(3) {
+  position: relative;
+  left: 20vw;
+  top: 25vh;
+}
+
+.container header div > span li:nth-child(4) {
+  position: relative;
+  left: 35vw;
+  top: 25vh;
+}
+
+.container header div > span li:nth-child(5) {
+  position: relative;
+  left: 40vw;
+  top: 35vh;
+}
+
+.container header div > span li:nth-child(6) {
+  position: relative;
+  left: 55vw;
+  top: 5vh;
+}
+
+.container header div > span li:nth-child(7) {
+  position: relative;
+  left: 0vw;
+  top: 40vh;
+}
+
+.container header div > span li:nth-child(8) {
+  position: relative;
+  left: -5vw;
+  top: 15vh;
+}
+
+.container header div > span li:nth-child(9) {
+  position: relative;
+  left: 0vw;
+  top: 60vh;
+}
+
+.container header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8rem;
+  font-weight: 500;
+}
+
+.container header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.container header nav a:hover {
+  font-weight: 700;
+  color: #cccccc;
+}
+
+.container header nav a:first-child {
+  color: #a9508b;
+}
+
+.container main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2/1/3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover 130%;
+  background-origin: border-box;
+  padding: 8rem;
+  color: white;
+}
+
+.container main h1 {
+  font-size: 3.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container main p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.container .subscribe {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 3/1/4/4;
+  background-color: #35424a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.container .subscribe div {
+  font-size: 1.4rem;
+  margin-left: 8rem;
+  font-weight: 700;
+}
+
+.container .subscribe form {
+  margin-right: 8rem;
+  width: 25%;
+}
+
+.container .subscribe form #email {
+  height: 2.4rem;
+  width: 71%;
+  padding: 4px;
+  font-size: 0.8rem;
+}
+
+.container .subscribe form #email:focus {
+  background-color: #35424a;
+  color: #a9508b;
+  font-weight: 900;
+}
+
+.container .subscribe form #submit {
+  height: 2.4rem;
+  width: 27%;
+  padding: 0 0.5rem;
+  background-color: #a9508b;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.container .subscribe form #submit:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.container .content {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 4/1/5/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+}
+
+.container .content div {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.container .content div img {
+  width: 22%;
+  margin-bottom: 1.2rem;
+}
+
+.container .content div img:hover {
+  -webkit-transform: rotateY(40deg);
+          transform: rotateY(40deg);
+}
+
+.container .content div h3 {
+  margin-bottom: 1.2rem;
+}
+
+.container .content div p {
+  font-size: 0.95rem;
+  width: 95%;
+  line-height: 1.5rem;
+}
+
+.container footer {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 5/1/6/4;
+  text-align: center;
+  border-top: 3.5px solid #a9508b;
+  padding: 2rem;
+  background-color: white;
+}
+
+.container footer div {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+.container footer div img {
+  width: 14%;
+  -webkit-animation: foot 5s linear infinite;
+          animation: foot 5s linear infinite;
+}
+
+@-webkit-keyframes foot {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes foot {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes cla {
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes cla {
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  html {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  html {
+    font-size: 2vw;
+  }
+  .container header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 2.5rem;
+  }
+  .container header .name {
+    margin-left: 0;
+  }
+  .container header nav {
+    margin-right: 0;
+  }
+  .container .subscribe div {
+    margin-left: 1rem;
+  }
+  .container .subscribe form {
+    margin-right: 1rem;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 2.5vw;
+  }
+  .container header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 2.5rem;
+  }
+  .container header .name {
+    margin-left: 0;
+  }
+  .container header nav {
+    margin-right: 0;
+  }
+  .container .subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .subscribe div {
+    margin: 0;
+  }
+  .container .subscribe form {
+    margin-right: 1rem;
+    width: 80%;
+    margin: 1rem 0 0 0;
+  }
+  .container footer div img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 3.5vw;
+  }
+  .container header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 2.5rem;
+  }
+  .container header .name {
+    margin-left: 0;
+  }
+  .container header nav {
+    margin-right: 0;
+  }
+  .container main {
+    padding: 8rem 4rem;
+  }
+  .container .content div {
+    width: 33%;
+  }
+  .container footer div img {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
