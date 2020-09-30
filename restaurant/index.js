@@ -82,13 +82,13 @@ const menu = [
 ];
 
 window.addEventListener("load", () => {listMenu(menu)})
-document.querySelectorAll(".filter-btn").forEach((button) =>{listFilter(button)})
-let sectionCenter = "";
+
+
 let categoryList = [];
 
 
-
 function listMenu(menu) {
+  let sectionCenter = "";
   menu.forEach((item) => {
     sectionCenter += `<article class="menu-item">
     <img src=${item.img} alt="menu item" class="photo" />
@@ -108,20 +108,25 @@ function listMenu(menu) {
 }
 
 function categories(menu) {
-  let buttonMaker = `<button type="button" class="filter-btn" data-id="all">all</button>`
+  let buttonMaker = `<button class="filter-btn" data-id="all">all</button>`
   menu.forEach((item) => {
     if(!categoryList.includes(item.category)){
       categoryList.push(item.category)
     }
   });
   categoryList.forEach((category) =>{
-    buttonMaker += `<button type="button" class="filter-btn" data-id="${category}">${category}</button>`
+    buttonMaker += `<button class="filter-btn" data-id="${category}">${category}</button>`
   })
   document.querySelector(".btn-container").innerHTML = buttonMaker
+
+  document.querySelectorAll(".filter-btn").forEach((button) =>{
+    button.addEventListener("click", (event) => {filterList(event)})
+  })
 }
 
-function listFilter(button){
-  button.addEventListener("click", (event) => {
-    console.log(event)
-  })
+function filterList(event){
+  let filt = event.target.innerHTML;
+  let list = menu.filter((item) =>item.category == filt)
+  if(event.target.innerHTML == "all"){list = menu}
+  listMenu(list)
 }
