@@ -82,6 +82,7 @@ const menu = [
 ];
 
 window.addEventListener("load", () => {listMenu(menu)})
+document.querySelectorAll(".filter-btn").forEach((button) =>{listFilter(button)})
 let sectionCenter = "";
 let categoryList = [];
 
@@ -107,9 +108,20 @@ function listMenu(menu) {
 }
 
 function categories(menu) {
+  let buttonMaker = `<button type="button" class="filter-btn" data-id="all">all</button>`
   menu.forEach((item) => {
     if(!categoryList.includes(item.category)){
       categoryList.push(item.category)
     }
+  });
+  categoryList.forEach((category) =>{
+    buttonMaker += `<button type="button" class="filter-btn" data-id="${category}">${category}</button>`
+  })
+  document.querySelector(".btn-container").innerHTML = buttonMaker
+}
+
+function listFilter(button){
+  button.addEventListener("click", (event) => {
+    console.log(event)
   })
 }
